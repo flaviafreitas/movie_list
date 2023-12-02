@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { MovieService } from "../../api/MovieService";
+import { MovieService } from "../../api/movieService";
 import './index.scss'
 
 const MovieDetail = () => {
