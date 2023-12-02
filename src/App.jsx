@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header.jsx";
+import Header from "./components/header/Header.jsx";
 import Home from './pages/home/Home.jsx';
 import MovieDetail from "./pages/movieDetail/MovieDetail.jsx";
 
