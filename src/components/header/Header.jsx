@@ -1,3 +1,5 @@
+import './index.scss'
+
 const Header = (props) => {
     function handleSubmit(event) {
       event.preventDefault();

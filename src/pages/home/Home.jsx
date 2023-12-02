@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { MovieService } from "../../api/movieService"
 import Card from "../../components/movieCard/Card"
+import './index.scss'
 
 const Home = ({ searchValueProp }) => {
   const [movies, setMovies] = useState([]);
