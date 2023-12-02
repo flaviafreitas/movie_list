@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
-import Home from "./pages/home/home.jsx";
+import Home from './pages/home/Home.jsx';
 import MovieDetail from "./pages/MovieDetail/MovieDetail.jsx";
 
 function App() {
