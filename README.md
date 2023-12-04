@@ -12,7 +12,7 @@ O projeto foi criado com fins educacionais, mas aqui estão algumas das tecnolog
 
 ## Visualização
 
-Você pode ver o planner em ação [aqui](https://movie-list.vercel.app/).
+Você pode ver o planner em ação [aqui](https://movie-list-l3b7imipp-flavia-freitas-projects.vercel.app).
 
 ## Como Executar o Projeto
 
