@@ -6,6 +6,13 @@ import './index.scss'
 const MovieDetail = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState({});
+  const formatCurrency = (value) => {
+    if (value !== undefined) {
+      return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    } else {
+      return 'Indisponível';
+    }
+  }
 
   async function getMovie() {
     const { data } = await MovieService.getMovieDetails(id);
@@ -35,16 +42,16 @@ const MovieDetail = () => {
         <div className="MovieDetail__col">
           <div className="MovieDetail__details">
             <div className="MovieDetail__detail">
-              <span>Budget:</span> {movie.budget}
+            <span>Orçamento:</span> {movie.budget !== 0 ? formatCurrency(movie.budget) : 'Indisponível'}
             </div>
             <div className="MovieDetail__detail">
-              <span>Original language:</span> {movie.original_language}
+              <span>Idioma de origem:</span> {movie.original_language}
             </div>
             <div className="MovieDetail__detail">
-              <span>Popularity:</span> {movie.popularity}
+            <span>Popularidade:</span> {movie.popularity !== 0 ? movie.popularity : 'Indisponível'}
             </div>
             <div className="MovieDetail__detail">
-              <span>Overview:</span> {movie.overview}
+              <span>Sinopse:</span> {movie.overview}
             </div>
           </div>
           <Link to={"/"} className="MovieDetail__button">
